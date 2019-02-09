@@ -1,0 +1,12 @@
+h1, h2 {
+    font-family: Helvetica, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+    color: darkolivegreen;
+}
+
+#nav-links {
+    font-family: Arial;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}

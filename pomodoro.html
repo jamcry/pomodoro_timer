@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- Pomodoro Timer webpage project by JamCry-->
+
 <head>
   <title>Pomodoro Timer</title>
   <link href="style.css" type="text/css" rel="stylesheet" />
@@ -6,4 +8,30 @@
 
 <body>
   <h1>Pomodoro Timer</h1>
+  <div id="nav-links">
+      <a href="#">Pomodoro</a> - <a href="#">Short Break</a> - <a href="#">Long Break </a>
+      <br>
+    </div>
+  <img src="http://blog.crisp.se/wp-content/uploads/2012/05/Pomodoro_timer.png" 
+  alt="Pomodoro Timer" width="20%" height="20%"/>
+
+  <div id="timer">
+      <form class="timer-form" action="#" method="GET">
+          <p><input type="time" name="time"/></p>
+          <input type="submit" name="start" value="Start" />
+          <input type="submit" name="stop" value="Stop" />
+          <input type="submit" name="reset" value="Reset" />
+        </form>
+  </div>
+  <br>
+  <h2>Keyboard Shortcuts</h2>
+  <p>
+    There will be some shortcuts.
+  </p>
+  <br>
+  <h2>What is the Pomodoro Technique?</h2>
+  <p>
+      The time management technique created by Francesco Cirillo<br>
+      for a more productive way to work and study.
+  </p>
 </body>
