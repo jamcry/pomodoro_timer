@@ -7,6 +7,19 @@ h1, h2 {
     font-family: Arial;
 }
 
+.box {
+    max-width: 500px;
+    margin: 0 auto;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #c62828;
+    padding: 0 1% 1% 1%;
+    height: auto;
+}
+
+.timer-form {
+    margin: 3%;
+}
 p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
