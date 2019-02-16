@@ -1,24 +1,55 @@
 h1, h2 {
     font-family: Helvetica, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
-    color: darkolivegreen;
+    color: #d50000;
 }
-
-#nav-links {
+button {
+    width: 10em;
+    height: 2em;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+.nav-links {
     font-family: Arial;
 }
 
+.nav-links button {
+    background: #f44336;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #b71c1c;
+    border-radius: 20px;
+}
+
+.nav-links button:hover {
+    background: #b71c1c;
+}
+
 .box {
+    background-color: #F8BBD0;
     max-width: 500px;
     margin: 0 auto;
-    border-style: dashed;
-    border-width: 2px;
-    border-color: #c62828;
+    border: 1px solid #EC407A;
+    border-radius: 10px;
     padding: 0 1% 1% 1%;
     height: auto;
+    text-align: center;
 }
 
 .timer-form {
     margin: 3%;
+}
+
+.timer-form button {
+    background: #7CB342;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #33691E;
+    border-radius: 3px;
+}
+
+.timer-form button:hover {
+    background: #33691E;
 }
 p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
