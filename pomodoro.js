@@ -4,6 +4,7 @@ const resetBtn = document.querySelector(".reset");
 const timerDisplay = document.querySelector(".timer");
 const endTimeDisplay = document.querySelector(".end-time");
 const timerButtons = document.querySelectorAll("[data-mins]");
+const alarm = document.querySelector(".alarm")
 let countdown;
 let isEuTime = false; // 24hrs(EU) or 12hrs format
 let secondsLeft = 25*60;
@@ -20,6 +21,7 @@ function startTimer(seconds) {
         console.log(`left: ${secondsLeft}`);
         if (secondsLeft < 0) {
             clearInterval(countdown);
+            alarm.play();
             alert("TIME'S UP!");
             return;
         }
