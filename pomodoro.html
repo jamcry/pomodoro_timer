@@ -10,9 +10,9 @@
     <div class="box">
         <h1>Pomodoro Timer</h1>
         <p class="nav-links">
-            <button class="pomodoro">Pomodoro</button>
-            <button class="shortBreak">Short Break</button>
-            <button class="longBreak">Long Break</button>
+            <button data-mins="25" class="pomodoro">Pomodoro</button>
+            <button data-mins="5" class="shortBreak">Short Break</button>
+            <button data-mins="10" class="longBreak">Long Break</button>
             <br>
         </p>
         <img src="http://blog.crisp.se/wp-content/uploads/2012/05/Pomodoro_timer.png" 
@@ -20,9 +20,9 @@
 
         <form class="timer-form">
             <div class="timer"></div>
-            <p class="status"></p>
+            <div class="end-time"></div>
             <button class="start">START</button>
-            <button class="stop">STOP</button>
+            <button class="pause">PAUSE</button>
             <button class="reset">RESET</button>
         </form>
     </div>
