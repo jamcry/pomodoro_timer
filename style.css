@@ -69,15 +69,16 @@ p {
 
 .timer {
     margin: auto;
-    padding-bottom: 10px;
     width: 250px;
-    height: 60px;
     border-radius: 10px;
     background: gray;
-    font-size: 48px;
+    font-size: 56px;
+    height: 80px;
     font-family: 'Oswald', sans-serif, 'ZCOOL QingKe HuangYou', cursive;
+    text-shadow: 0 4px 0 #696969;
     color: white;
     text-align: center;
+    box-shadow: 0 5px 0 #4e4b4b;
 }
 
 .end-time {

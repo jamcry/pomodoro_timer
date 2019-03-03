@@ -22,7 +22,7 @@ function startTimer(seconds) {
         if (secondsLeft < 0) {
             clearInterval(countdown);
             alarm.play();
-            alert("TIME'S UP!");
+            timerDisplay.textContent = "TIME'S UP!";
             return;
         }
         displayTimeLeft(secondsLeft);
