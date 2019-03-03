@@ -62,7 +62,9 @@ function pauseTimer(e){
 function continueTimer(e){
     console.log("continued");
     e.preventDefault();
+    
     startTimer(secondsLeft);
+
     end = (Date.now() + secondsLeft*1000);
     displayEndTime(end);
 }

@@ -1,7 +1,12 @@
+* {
+    outline: 0; /*Disable outline on click*/
+}
+
 h1, h2 {
     font-family: Helvetica, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
     color: #d50000;
 }
+
 button {
     width: 10em;
     height: 2em;
@@ -10,15 +15,20 @@ button {
     font-size: 14px;
     box-shadow: 0 2px 0 black;
 }
+.box button:active {
+    box-shadow: 0 0.5px 0 black;
+    transform: translateY(4px);
+}
 .nav-links {
     font-family: Arial;
 }
 
 .nav-links button {
-    background: #f44336;
+    background: #c62e2d;
     color: white;
     font-weight: bold;
-    border: 1px solid #b71c1c;
+    border: none;
+    box-shadow: 0 5px 0 #932421;
     border-radius: 20px;
 }
 
@@ -42,15 +52,16 @@ button {
 }
 
 .timer-form button {
-    background: #7CB342;
+    background: #24a19d;
     color: white;
     font-weight: bold;
-    border: 1px solid #33691E;
+    border: none;
+    box-shadow: 0 5px 0 #187672;
     border-radius: 3px;
 }
 
 .timer-form button:hover {
-    background: #33691E;
+    /* nothing */
 }
 p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
@@ -58,12 +69,17 @@ p {
 
 .timer {
     margin: auto;
+    padding-bottom: 10px;
     width: 250px;
     height: 60px;
     border-radius: 10px;
     background: gray;
     font-size: 48px;
+    font-family: 'Oswald', sans-serif, 'ZCOOL QingKe HuangYou', cursive;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+}
+
+.end-time {
+    height: 18px;
 }
