@@ -1,6 +1,13 @@
 * {
     outline: 0; /*Disable outline on click*/
 }
+.disable-select {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
 
 h1, h2 {
     font-family: Helvetica, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
