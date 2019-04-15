@@ -32,7 +32,7 @@ function startTimer(seconds) {
 function displayTimeLeft(sec) {
     const minutes = Math.floor(sec / 60);
     const seconds = sec % 60;
-    const displayText = `${minutes}:${(seconds < 10) ? "0" : ""}${seconds}`;
+    const displayText = `${minutes}:${(seconds < 10) ? "0" : ""}${seconds}`; // Convert seconds to two-digit
     document.title = (`Time Left : ${displayText}`);
     timerDisplay.textContent = displayText;
 }
@@ -43,39 +43,35 @@ function displayEndTime(timestamp) {
     const minutes = end.getMinutes();
     endTimeDisplay.textContent = `Countdown ends at ${(!isEuTime && hours > 12 ? hours - 12 : hours)}:${(minutes < 10) ? "0" : ""}${minutes}`;
 }
+
 function startTimerOnClick() {
     const minutes = parseInt(this.dataset.mins);
     const seconds = minutes * 60;
     startTimer(seconds);
 }
+
 timerButtons.forEach(button => button.addEventListener("click", startTimerOnClick))
 
-// The following should be optimized.
-// secondsLeft cannot be const. So, it is declared outside the function.
-let pausedTimeLeft;
 startBtn.addEventListener("click", continueTimer);
 pauseBtn.addEventListener("click", pauseTimer);
 resetBtn.addEventListener("click", resetTimer);
+
 function pauseTimer(e){
-    console.log("paused");
     e.preventDefault();
     clearInterval(countdown);
 }
-function continueTimer(e){
-    console.log("continued");
-    e.preventDefault();
-    
-    startTimer(secondsLeft);
 
+function continueTimer(e){
+    e.preventDefault();
+    startTimer(secondsLeft);
     end = (Date.now() + secondsLeft*1000);
     displayEndTime(end);
 }
+
 function resetTimer(e){
-    console.log("resetted");
     e.preventDefault();
     clearInterval(countdown);
     secondsLeft = 25*60;
     displayTimeLeft(secondsLeft);
-    endTimeDisplay.textContent = "";
-    
+    endTimeDisplay.textContent = "";   
 }
