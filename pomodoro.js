@@ -89,10 +89,12 @@ function incrementTimer(e) {
   e.preventDefault();
   secondsLeft += 60;
   displayTimeLeft(secondsLeft);
+  startTimer(secondsLeft);
 }
 
 function decrementTimer(e) {
   e.preventDefault();
   secondsLeft -= 60;
   displayTimeLeft(secondsLeft);
+  startTimer(secondsLeft);
 }
